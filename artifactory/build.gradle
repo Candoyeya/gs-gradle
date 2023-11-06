@@ -1,3 +1,12 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.17.2"
+    }
+}
+
 plugins {
     id 'java'
     id 'eclipse'
@@ -34,15 +43,6 @@ publishing {
             artifactId = 'gs-gradle'
             version = '1.0'
         }
-    }
-}
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.17.2"
     }
 }
 
